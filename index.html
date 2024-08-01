@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Kode+Mono:wght@400..700&family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&family=Oswald:wght@200..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ga+Maamli&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville+SC&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+   
+</head>
+<body>
+   <!-- header section starts -->
+   <header>
+    <div class="container">
+      <!-- nav section starts -->
+  <nav class="navbar">
+    <div class="nav-img-part">
+      <img class="nav-img" src="./logo.png">
+    </div>
+    <ul class="navbar-navigation">
+        <li><a href="./index.html" class="home">HOME</a></li>
+          <li><a href="./about.html" class="about">ABOUT US</a></li>
+          <li><a href="./menu.html" class="about">MENU</a><i class="fa-solid fa-angle-down chevron"></i></li>
+          <ul class="drop-down-menu">
+            <li><a href="./gallery.html">Gallery</a></li>
+        </ul>
+          <li><a href="./order.html" class="about">ORDER</a></li>
+          <li><a href="./blog.html" class="about">BLOG</a><i class="fa-solid fa-angle-down chevron-1"></i></li>
+          <ul class="drop-down-blog">
+            <li><a href="">Blog-1</a></li>
+            <li><a href="">Blog-2</a></li>
+        </ul>
+          <li><a href="./contact.html" class="about">CONTACT</a></li>
+      </ul>
+    <div class="reservation-box">
+      <p>RESERVATION</p>
+    </div>
+    <div class="cart">
+    <i class="fa-solid fa-bag-shopping bag bag"></i>
+    </div>
+    <i class="fa-solid fa-bars hambars"></i>
+  </div>
+  </nav>
+  <!-- nav section ends -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide" id="slider1">
+        <h4 class="banner-h4"><i class="fa-solid fa-window-minimize mini"></i> HELLO, NEW FRIEND !</h4>
+        <h2 class="banner-h2">Welcome Back <span class="span">to TastyC</span></h2>
+        <p class="banner-p">Lorem ipsum dolor sit amet consectetur, 
+           elit.<span class="span"> Dolorum voluptatum quos alias.</span></p>
+          <div class="banner-display">
+            <button class="banner-btn">RESERVATION</button>
+            <H3 class="banner-h3">OPEN MENU</H3>
+          </div>
+      </div>
+      <div class="swiper-slide" id="slider2">
+        <h3 class="banner2-h3"><i class="fa-solid fa-window-minimize minim"></i>Welcome <span class="span">Our Restaurant !</span></h3>
+        <button class="banner2-btn">View More</button>
+      </div>
+      <div class="swiper-slide" id="slider3">
+        <h2 class="banner3-h2"><i class="fa-solid fa-window-minimize minim"></i>Veg & Non-Veg Available</h2>
+      </div>
+      <div class="swiper-slide" id="slider4">
+        <h2 class="banner4-h2">TastyC</h2>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  </header>
+  <!-- header section ends -->
+
+   <!-- section-2 starts -->
+    <section class="section-2" data-aos="fade-right">
+      <div class="container">
+        <div class="sec-2-display">
+          <div data-aos="zoom-in-up">
+    <iframe class="iframe" src="https://www.youtube.com/embed/44nL6PP_Ex0?si=c9Y-Z5-PzzItJgW-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+         </div>
+    <div class="sec-2-text" data-aos="fade-right">
+        <div class="sec-2-display">
+          <i class="fa-solid fa-window-minimize minus"></i>
+        <h4>About Us</h4>
+        </div>
+    <h2>We invite you to <span class="sec-2-span">visit our restaurent</span></h2>
+    <p>Lorem ipsum dolor sit amet consectetur, 
+       adipisicing elit.<span class="sec-2-spanp">Ab inventore amet alias
+       eligendi fuga modi ut ratione,<span class="sec-2-spanp">molestiae
+       maxime. Architecto inventore quibusdam,
+       praesen<span class="sec-2-spanp">-tium commodi consequuntur et 
+       ratione neque veniam <span class="sec-2-spanp">consectetur vitae, 
+       maxime est.</span></p>
+       <div class="sec-2-display-btn">
+   <button class="sec-2-btn">READ MORE</button>
+   <div class="sec2-icon">
+   <i class="fa-brands fa-facebook-f facebook"></i>
+   <i class="fa-brands fa-instagram instagram"></i>
+   <i class="fa-brands fa-twitter twitter"></i>
+   <i class="fa-brands fa-youtube youtube"></i>
+   <i class="fa-brands fa-google google"></i>
+   <i class="fa-solid fa-plus plus"></i>
+   </div>
+  </div>
+   </div>
+   </div>
+</div>
+  </section>
+  <!-- section-2 ends -->
+
+  <!-- section-3 starts -->
+       <section class="section-3">
+        <div class="container">
+      <div class="sec3-display">
+        <div data-aos="fade-down">
+          <div class="sec3-about">
+            <i class="fa-solid fa-window-minimize minus2"></i>
+            <h4>ABOUT US</h4>
+          </div>
+          <div>
+          <h2 class="sec3-h2">Working hours</h2>
+          <p class="sec3-p">Rolorem,beatae dolorum,praesentium itaque et quam quaerat.</p>
+         </div>
+          <div class="sec3-reservation">
+           <button class="sec3-btn">RESERVATION</button>
+           <H3>CONTACT US</H3>
+          </div>
+          </div>
+           <div class="sec3-whitebox" data-aos="fade-down-right">
+             <div class="sec3-boxtext">
+              <h4>MONDAY TO FRIDAY</h4>
+               <h3>10 : 00AM</h3>
+               <h3>20 : 00PM</h3>
+               </div>
+               <div class="sec3-boxtext2">
+              <h4>SATURDAY TO SUNDAY</h4>
+               <h3>09 : 00AM</h3>
+               <h3>22 : 00PM</h3>
+             </div>
+           </div>
+        </div>
+        </div>
+       </section>
+   <!-- section-3 ends -->
+
+    <!-- section-4 starts -->
+       <section class="sec-4">
+        <div class="container">
+          <div class="sec4-text" data-aos="fade-down">
+            <h2>Recipes Of Our Chefs</h2>
+          </div>
+          <div class="sec4-display">
+            <div class="food-1" data-aos="zoom-in-right">
+            <img src="./burger-950x962.png">
+            <h2>BURGER</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Necessitatibus eos laboriosam provident adipisci totam 
+               unde aliquam soluta temporibus exercitationem iste.</p>
+            <button class="sec4-bttn">$100.00</button>
+          </div>
+          <div class="food-2" data-aos="zoom-in-right">
+            <img src="./momo-img.jpg">
+            <h2>MOMO</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus eos laboriosam provident adipisci totam 
+              unde aliquam soluta temporibus exercitationem iste.</p> 
+            <button class="sec4-bttn">$150.00</button>
+          </div>
+          <div class="food-3" data-aos="zoom-in-right">
+            <img src="./bengali-thali.jpg">
+            <h2>Bengali-Thali</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus eos laboriosam provident adipisci totam 
+              unde aliquam soluta temporibus exercitationem iste.</p>
+            <button class="sec4-bttn">$250.00</button>
+          </div>
+          <div class="food-4" data-aos="zoom-in-right">
+            <img src="./mocktail.jpg">
+            <h2>MOCKTAIL</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus eos laboriosam provident adipisci totam 
+              unde aliquam soluta temporibus exercitationem iste.</p>
+            <button class="sec4-bttn">$200.00</button>
+          </div>
+          </div>
+          <div class="sec4-display">
+            <div class="food-5" data-aos="zoom-in-right">
+            <img src="./blog-5.jpg.webp">
+            <h2>CHOCOLATE-CAKE</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Necessitatibus eos laboriosam provident adipisci totam 
+               unde aliquam soluta temporibus exercitationem iste.</p>
+            <button class="sec4-bttn">$150.00</button>
+          </div>
+          <div class="food-6" data-aos="zoom-in-right">
+            <img src="./paneer.jpg">
+            <h2>PANEER KABAB</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus eos laboriosam provident adipisci totam 
+              unde aliquam soluta temporibus exercitationem iste.</p> 
+            <button class="sec4-bttn">$200.00</button>
+          </div>
+          <div class="food-7" data-aos="zoom-in-right">
+            <img src="./pizza.jpg">
+            <h2>PIZZA</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus eos laboriosam provident adipisci totam 
+              unde aliquam soluta temporibus exercitationem iste.</p>
+            <button class="sec4-bttn">$299.00</button>
+          </div>
+          <div class="food-8" data-aos="zoom-in-right">
+            <img src="./food-5.jpg">
+            <h2>CHICKEN STICK</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Necessitatibus eos laboriosam provident adipisci totam 
+              unde aliquam soluta temporibus exercitationem iste.</p>
+            <button class="sec4-bttn">$250.00</button>
+          </div>
+          </div>
+       </div>
+       </section>
+    <!-- section-4 ends -->
+
+    <!-- section-5 starts -->
+        <section class="sec-5">
+         <div class="container">
+          <div class="sec5-display">
+            <div class="sec5-text1" data-aos="flip-left">
+              <h3>200<i class="fa-solid fa-plus plus2"></i></h3>
+              <h4>Visitors Daily</h4>
+            </div>
+            <div class="sec5-text2" data-aos="flip-left">
+              <h3>400<i class="fa-solid fa-plus plus2"></i></h3>
+              <h4>Deliveries Monthly</h4>
+            </div>
+            <div class="sec5-text3" data-aos="flip-left">
+              <h3>100<i class="fa-solid fa-percent plus2"></i></h3>
+              <h4>Positive Feedback</h4>
+            </div>
+            <div class="sec5-text4" data-aos="flip-left">
+              <h3>40<i class="fa-solid fa-plus plus2"></i></h3>
+              <h4>Award And Honors</h4>
+            </div>
+          </div>
+         </div>
+        </section>
+    <!-- section-5 ends -->
+
+     <!-- section-6 starts -->
+      <section class="sec-6">
+        <div class="container">
+          <div class="sec6-text" data-aos="fade-down">
+            <h4>Team of Restaurant</h4>
+            <h2>Meet Our Proffessionals</h2>
+          </div>
+           <div>
+            <i class="fa-solid fa-spa spa"></i>
+            <div class="underline"></div>
+           </div>
+          <div class="sec6-display">
+            <div class="chef-1" data-aos="fade-down-right">
+            <img src="./team-single-1-1000x980.jpg">
+            <div class="chef1-box">
+              <h3>Damien Russo</h3>
+              <h4>Assistent Chef</h4>
+            </div>
+          </div>
+          <div class="chef-2" data-aos="fade-down-right">
+            <img src="./team-single-2-1-1000x980.jpg">
+            <div class="chef2-box">
+              <h3>Benoit Montagne</h3>
+              <h4>Chef</h4>
+            </div>
+          </div>
+          <div class="chef-3" data-aos="fade-down-right">
+            <img src="./bg-single-team_04-1000x980.jpg">
+            <div class="chef3-box">
+              <h3>Mario Jardin</h3>
+              <h4>Assistent Chef</h4>
+            </div>
+          </div>
+          </div>
+        </div>
+      </section>
+      <!-- section-6 ends -->
+
+      <!-- section-7 starts -->
+         <section class="sec-7">
+          <div class="container">
+            <div class="sec7-display">
+              <div>
+             <div class="sec7-text" data-aos="fade-down">
+              <i class="fa-solid fa-window-minimize minus2"></i>
+               <h4>MOBILE APPLICATION</h4>
+             </div>
+             <div class="sec7-text2" data-aos="fade-right">
+              <h2>DOWNLOAD <span class="span">OUR APPLICATION</span></h2>
+              <P>Lorem ipsum dolor sit,amet<span class="span">consectetur adipisicing elit.</span></P>
+              <div class="sec7-btn-div" data-aos="fade-down-right">
+      <button class="sec7-btn"><i class="fa-brands fa-apple apple"></i>APPSTORE</button>
+      <button class="sec7-btn2"><i class="fa-brands fa-google google2"></i>PLAYMARKET</button>
+      </div>
+             </div>
+             </div>
+             <div data-aos="flip-left">
+              <img class="sec7-img" src="./tastyc_apps2-950x848.png">
+             </div>
+              </div>
+          </div>
+         </section>
+      <!-- section-7 ends -->
+       <!-- section-8 starts -->
+            <section>
+              <div class="container">
+                <div class="sec8-review" data-aos="fade-down">
+                <i class="fa-solid fa-window-minimize minimize"></i>
+                <h3>REVIEWS</h3>
+                <h2>What Our Visit Say</h2>
+                </div>
+               <div class="sec8-display">
+                  <div class="sec8-img1" data-aos="zoom-in-right">
+                  <h2>The Best Restaurant!</h2>
+                  <p>Lorem ipsum dolor sit amet consec<span class="span">tetur adipisicing elit. 
+                    In dignis<span class="span">simos velit deleniti modiitaque consequatur 
+                    quam est aut vitae ipsam commodi possimus ut numquam, 
+                    saepe culpa libero error aliquid, temporibus doloremque, 
+                    cumque eligendi eum consectetur Velit dolor. 
+                    cumque voluptas.</span></p>
+                    <hr>
+                    <div class="sec8-img-diisplay" data-aos="flip-left">
+                    <img class="sec8-logo-img" src="./Image (1).png">
+                    <h3>EMMA NEWMAN</h3>
+                    </div>
+                </div>
+                <div class="sec8-img2" data-aos="zoom-in-right">
+                  <h2>It Was Very Delicious!</h2>
+                  <p>Lorem ipsum dolor sit amet consec<span class="span">tetur adipisicing elit. 
+                    In dignis<span class="span">simos velit deleniti modiitaque consequatur 
+                    quam est aut vitae ipsam commodi possimus ut numquam, 
+                    saepe culpa libero error aliquid, temporibus doloremque, 
+                    cumque eligendi eum consectetur Velit dolor. 
+                    cumque voluptas.</span></p> 
+                    <hr>
+                    <div class="sec8-img-diisplay" data-aos="flip-left">
+                    <img class="sec8-logo-img" src="./Image (3).png">
+                    <h3>OSCAR OLDMAN</h3>
+                    </div>
+                </div>
+                <div class="sec8-img3" data-aos="zoom-in-right">
+                  <h2>I'm Delighted!</h2>
+                  <p>Lorem ipsum dolor sit amet consec<span class="span">tetur adipisicing elit. 
+                    In dignis<span class="span">simos velit deleniti modiitaque consequatur 
+                    quam est aut vitae ipsam commodi possimus ut numquam, 
+                    saepe culpa libero error aliquid, temporibus doloremque, 
+                    cumque eligendi eum consectetur Velit dolor. 
+                    cumque voluptas.</span></p>
+                    <hr>
+                    <div class="sec8-img-diisplay" data-aos="flip-left">
+                    <img class="sec8-logo-img" src="./Image (2).png">
+                    <h3>VICTORIA FREEMAN</h3>
+                    </div>
+                </div>
+                </div>
+              </div>
+            </section>
+        <!-- sectiom-8 ends -->
+
+        <!-- section-9 starts -->
+            <section>
+              <div class="container">
+                <div class="sec9-bg" data-aos="fade-right">
+                  <h2>SUBSCRIBE<span class="span2">OUR</span></h2>
+                  <H3><i class="fa-solid fa-window-minimize"></i>TastyC<i class="fa-solid fa-window-minimize"></i></H3>
+                </div>
+              </div>
+            </section>
+         <!-- section-9 ends -->
+
+         <!-- section-10 starts -->
+         <footer class="section-10">
+          <div class="container">
+            <div class="sec10-logo-display">
+            <div class="sec10-logo" data-aos="fade-down">
+            <img class="sec10-logo-img" src="./logo.png">
+            </div>
+            <div class="sec10-icon" data-aos="fade-right">
+            <i class="fa-brands fa-facebook-f facebook"></i>
+            <i class="fa-brands fa-instagram instagram"></i>
+            <i class="fa-brands fa-twitter twitter"></i>
+            </div>
+            </div>
+          <div class="sec10-display">
+           <div class="TastyC" data-aos="fade-down">
+            <h2>About Us</h2>
+            <hr class="minimai-about">
+            <p>Lorem ipsum dolor sit amet, consecte-<span class="span">tur adipiscing elit. 
+              Aliquam at dignis-<span class="span">sim nunc, id maximus ex. 
+              Etiam nec <span class="span">dignissim elit, at dignissim enim.</span></p>
+              <h3>READ MORE</h3>
+            </div>
+           <div class="contact" data-aos="fade-right">
+            <h2>Contact Info</h2>
+           <hr class="minimai-cont">
+            <ul>
+              <li class="call">Call: +91 7689043215</li>
+              <li class="call">Email: tastyc987@gmail.com</li>
+              <li class="call">Find Us:Canada, Tornoto, Avenue 31B </li>
+            </ul>
+            <h3>READ MORE</h3>
+           </div>
+           <div class="quick" data-aos="fade-down">
+            <h2>Quick Links</h2>
+            <hr class="minimai-quick">
+            <ul class="sec10-navigation" data-aos="fade-right">
+                <li><a href="./index.html"><i class="fa-solid fa-arrow-right arrow"></i></i>Home</a></li>
+                <li><a href="./about.html"><i class="fa-solid fa-arrow-right arrow"></i></i>About Us</a></li>
+                <li><a href="./menu.html"><i class="fa-solid fa-arrow-right arrow"></i>Menu</a></li>
+                <li><a href="./gallery.html"><i class="fa-solid fa-arrow-right arrow"></i></i>Gallery</a></li>
+                <li><a href="./order.html"><i class="fa-solid fa-arrow-right arrow"></i></i>Order</a></li>
+                <li><a href="./blog.html"><i class="fa-solid fa-arrow-right arrow"></i>Blog</a></li>
+                <li><a href="./contact.html"><i class="fa-solid fa-arrow-right arrow"></i></i>Contact</a></li>
+          </ul>
+           </div>
+           <div class="location" data-aos="fade-down">
+            <h2>Location</h2> 
+           <hr class="minimai-locat">
+            <div data-aos="fade-right">
+           <iframe class="locat" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29472.699336628008!2d88.32864381083984!3d22.575833600000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a027779a088582d%3A0x9a54ef761b921943!2sTasty%20Treat%20Restaurant!5e0!3m2!1sen!2sin!4v1720377252711!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          </div>
+          </div>
+          </div>
+        </footer>
+          <!-- section-10 ends -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="./script.js"></script>
+</body>
+</html>

@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    $(".hambars").click(function(){
+        $(".navbar-navigation").toggleClass("hammenu");
+    })
+    $(".chevron-1").click(function(){
+        $(".drop-down-blog").toggleClass("drop-down-blog-toggle")
+    })
+})
+$(document).ready(function(){
+    $(".chevron").click(function(){
+        $(".drop-down-menu").toggleClass("drop-down-menu-toggle")
+    })
+})
+AOS.init();
